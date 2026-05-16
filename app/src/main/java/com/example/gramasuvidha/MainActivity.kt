@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
-
 import com.google.gson.reflect.TypeToken
 
 class MainActivity : AppCompatActivity() {
@@ -24,13 +23,15 @@ class MainActivity : AppCompatActivity() {
         val projects = loadMockProjects()
         if (projects.isEmpty()) {
             Log.w(TAG, "No projects loaded or projects list is empty")
+        } else {
+            Log.d(TAG, "Loaded ${projects.size} projects")
         }
+
         val adapter = ProjectAdapter(projects)
         recyclerView.adapter = adapter
     }
 
     private fun loadMockProjects(): List<Project> {
-
         return try {
             val jsonString = assets.open("projects.json").bufferedReader().readText()
             val type = object : TypeToken<Map<String, List<Project>>>() {}.type
