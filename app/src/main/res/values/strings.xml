@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GramaSuvidha</string>
+    <string name="progress_percentage">%1$d%%</string>
+</resources>

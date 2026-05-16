@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Main Road Repair",
+      "budget": "₹50,00,000",
+      "completionDate": "2026-08-15",
+      "currentProgress": 65,
+      "status": "In Progress",
+      "location": "Village Center",
+      "description": "Repairing main road connecting villages"
+    },
+    {
+      "id": 2,
+      "name": "Community Hall Construction",
+      "budget": "₹25,00,000",
+      "completionDate": "2026-09-30",
+      "currentProgress": 40,
+      "status": "In Progress",
+      "location": "Panchayat Office",
+      "description": "Building a new community hall for meetings"
+    },
+    {
+      "id": 3,
+      "name": "Borewell Installation",
+      "budget": "₹10,00,000",
+      "completionDate": "2026-06-15",
+      "currentProgress": 90,
+      "status": "Nearing Completion",
+      "location": "Agricultural Area",
+      "description": "Installing boreholes for irrigation"
+    }
+  ]
+}
